@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Principles Analytics — Independent data and AI advisory. Helping companies build data-driven capabilities and implement winning AI strategies." />
+  <title>Principles Analytics | Data & AI Advisory</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+</head>
+<body>
+
+  <!-- ─── NAV ──────────────────────────────────── -->
+  <nav class="nav" role="navigation" aria-label="Main">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Principles Analytics home">
+        <span class="nav__logo-name">Principles Analytics</span>
+        <span class="nav__logo-dot" aria-hidden="true"></span>
+      </a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html"   class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─────────────────────────────────── -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <div class="hero__content">
+        <span class="hero__eyebrow">Data &amp; AI Advisory</span>
+        <h1 class="hero__title" id="hero-title">
+          Turning data into<br /><em>strategic advantage</em>
+        </h1>
+        <p class="hero__sub">
+          Independent advisory for executives and boards navigating
+          data transformation, analytics maturity, and AI adoption.
+          Principled thinking, practical results.
+        </p>
+        <div class="hero__cta">
+          <a href="contact.html" class="btn btn-primary">Get in touch</a>
+          <a href="about.html"   class="btn btn-outline">Learn more</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">Scroll</div>
+  </section>
+
+  <!-- ─── SERVICES ─────────────────────────────── -->
+  <section class="section services" aria-labelledby="services-title">
+    <div class="container">
+      <p class="section-label">What I do</p>
+      <h2 class="section-title" id="services-title">Advisory &amp; consulting services</h2>
+      <p class="section-body">
+        I work closely with leadership teams to define strategy, assess capability,
+        and guide execution — across the full data and AI value chain.
+      </p>
+
+      <div class="services__grid">
+
+        <div class="service-card">
+          <div class="service-card__icon" aria-hidden="true">📊</div>
+          <h3 class="service-card__title">Data Strategy</h3>
+          <p class="service-card__body">
+            Defining a coherent roadmap for data governance, architecture,
+            and analytics capability — aligned with your business objectives.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon" aria-hidden="true">🤖</div>
+          <h3 class="service-card__title">AI &amp; Machine Learning Advisory</h3>
+          <p class="service-card__body">
+            Identifying high-value AI use cases, evaluating build-vs-buy options,
+            and helping organisations adopt AI responsibly and at scale.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon" aria-hidden="true">🏗️</div>
+          <h3 class="service-card__title">Technology &amp; Architecture Review</h3>
+          <p class="service-card__body">
+            Independent assessment of data platforms, tooling choices, and
+            vendor landscapes — providing an objective second opinion.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon" aria-hidden="true">🎯</div>
+          <h3 class="service-card__title">Executive &amp; Board Advisory</h3>
+          <p class="service-card__body">
+            Serving as a trusted advisor or independent board member, bridging
+            the gap between technical teams and leadership on data and AI matters.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon" aria-hidden="true">📈</div>
+          <h3 class="service-card__title">Analytics Transformation</h3>
+          <p class="service-card__body">
+            Guiding organisations through the cultural and operational shift
+            toward data-driven decision-making — from assessment to adoption.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon" aria-hidden="true">🔍</div>
+          <h3 class="service-card__title">Due Diligence</h3>
+          <p class="service-card__body">
+            Technical and strategic due diligence on data and AI assets for
+            investors, acquirers, and boards evaluating digital capabilities.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ─── CTA BAND ──────────────────────────────── -->
+  <section class="cta-band" aria-labelledby="cta-title">
+    <div class="container">
+      <h2 class="cta-band__title" id="cta-title">Ready to have a conversation?</h2>
+      <p class="cta-band__sub">
+        Whether you need ongoing advisory support or a focused engagement,
+        I would be happy to explore how I can help.
+      </p>
+      <a href="contact.html" class="btn btn-primary">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__brand">Principles Analytics</span>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <span class="footer__copy">&copy; <span id="year"></span> Principles Analytics</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile nav toggle
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+
+</body>
+</html>
