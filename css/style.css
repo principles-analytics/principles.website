@@ -365,10 +365,8 @@ a   { color: inherit; text-decoration: none; }
 }
 
 .clients__logo {
-  height: 40px;
+  height: auto;
   width: auto;
-  max-width: 140px;
-  object-fit: contain;
   /* filter: grayscale(100%) opacity(0.5); */
   transition: filter 0.2s;
 }
@@ -377,12 +375,12 @@ a   { color: inherit; text-decoration: none; }
   filter: grayscale(0%) opacity(1);
 } */
 
-/* Per-logo size overrides — adjust height to taste */
-.clients__logo--letemps    { height: 70px; }
-.clients__logo--strategysa { height: 70px; }
-.clients__logo--opifex     { height: 70px; }
-.clients__logo--netzero    { height: 90px; }
-.clients__logo--scala      { height: 90px; }
+/* Per-logo size overrides — adjust max-height / max-width to taste */
+.clients__logo--letemps    { max-height: 70px;  max-width: 200px; }
+.clients__logo--strategysa { max-height: 70px;  max-width: 200px; }
+.clients__logo--opifex     { max-height: 70px;  max-width: 200px; }
+.clients__logo--netzero    { max-height: 90px;  max-width: 220px; }
+.clients__logo--scala      { max-height: 90px;  max-width: 220px; }
 
 /* ─── CTA BAND ───────────────────────────────── */
 
