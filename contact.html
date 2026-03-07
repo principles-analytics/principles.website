@@ -42,147 +42,46 @@
   <!-- ─── CONTACT SECTION ──────────────────────── -->
   <section class="section" aria-labelledby="contact-title">
     <div class="container">
-      <div class="contact-grid">
+        <p class="section-label">Get in touch</p>
+        <h2 class="section-title" id="contact-title">How to reach me</h2>
+        <p class="section-body" style="margin-bottom: 2.5rem;">
+          I take on a limited number of engagements at a time to ensure
+          each client receives focused attention. Feel free to reach out
+          and we can explore whether there is a good fit.
+        </p>
 
-        <!-- Left: contact info -->
-        <div>
-          <p class="section-label">Get in touch</p>
-          <h2 class="section-title" id="contact-title">How to reach me</h2>
-          <p class="section-body" style="margin-bottom: 2.5rem;">
-            I take on a limited number of engagements at a time to ensure
-            each client receives focused attention. Feel free to reach out
-            and we can explore whether there is a good fit.
-          </p>
-
-          <div class="contact-info__item">
-            <div class="contact-info__icon" aria-hidden="true">✉️</div>
-            <div>
-              <p class="contact-info__label">Email</p>
-              <p class="contact-info__value">
-                <!-- TODO: replace with your email address -->
-                <a href="mailto:hello@principles-analytics.com">hello@principles-analytics.com</a>
-              </p>
-            </div>
-          </div>
-
-          <div class="contact-info__item">
-            <div class="contact-info__icon" aria-hidden="true">💼</div>
-            <div>
-              <p class="contact-info__label">LinkedIn</p>
-              <p class="contact-info__value">
-                <!-- TODO: replace with your LinkedIn URL -->
-                <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">Connect on LinkedIn</a>
-              </p>
-            </div>
-          </div>
-
-          <div class="contact-info__item">
-            <div class="contact-info__icon" aria-hidden="true">🌍</div>
-            <div>
-              <p class="contact-info__label">Location</p>
-              <p class="contact-info__value">
-                <!-- TODO: update with your location -->
-                Available globally, based in&nbsp;[City, Country]
-              </p>
-            </div>
+        <div class="contact-info__item">
+          <div class="contact-info__icon" aria-hidden="true">✉️</div>
+          <div>
+            <p class="contact-info__label">Email</p>
+            <p class="contact-info__value">
+              <!-- TODO: replace with your email address -->
+              <a href="mailto:hello@principles-analytics.com">helloAtprinciples-analytics.com</a>
+            </p>
           </div>
         </div>
 
-        <!-- Right: contact form -->
-        <div>
-          <!--
-            This form uses Formspree for zero-backend form handling.
-            Steps:
-              1. Sign up at https://formspree.io (free tier available)
-              2. Create a new form and get your endpoint ID
-              3. Replace YOUR_FORM_ID below with that ID
-          -->
-          <form
-            id="contactForm"
-            action="https://formspree.io/f/YOUR_FORM_ID"
-            method="POST"
-            novalidate
-          >
-            <div class="form-row">
-              <div class="form-group">
-                <label for="firstName">First name <span aria-hidden="true">*</span></label>
-                <input
-                  type="text"
-                  id="firstName"
-                  name="firstName"
-                  required
-                  autocomplete="given-name"
-                  placeholder="Jane"
-                />
-              </div>
-              <div class="form-group">
-                <label for="lastName">Last name <span aria-hidden="true">*</span></label>
-                <input
-                  type="text"
-                  id="lastName"
-                  name="lastName"
-                  required
-                  autocomplete="family-name"
-                  placeholder="Smith"
-                />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email address <span aria-hidden="true">*</span></label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                autocomplete="email"
-                placeholder="jane@company.com"
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="company">Company / Organisation</label>
-              <input
-                type="text"
-                id="company"
-                name="company"
-                autocomplete="organization"
-                placeholder="Acme Corp"
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="subject">Area of interest <span aria-hidden="true">*</span></label>
-              <select id="subject" name="subject" required>
-                <option value="" disabled selected>Please select…</option>
-                <option value="data-strategy">Data strategy</option>
-                <option value="ai-advisory">AI &amp; machine learning advisory</option>
-                <option value="technology-review">Technology &amp; architecture review</option>
-                <option value="board-advisory">Executive / board advisory</option>
-                <option value="due-diligence">Due diligence</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="message">Message <span aria-hidden="true">*</span></label>
-              <textarea
-                id="message"
-                name="message"
-                required
-                placeholder="Tell me a bit about your situation and what you are looking for…"
-              ></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
-              Send message
-            </button>
-
-            <p id="formStatus" style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);" aria-live="polite"></p>
-          </form>
+        <div class="contact-info__item">
+          <div class="contact-info__icon" aria-hidden="true">💼</div>
+          <div>
+            <p class="contact-info__label">LinkedIn</p>
+            <p class="contact-info__value">
+              <!-- TODO: replace with your LinkedIn URL -->
+              <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+            </p>
+          </div>
         </div>
 
-      </div>
+        <div class="contact-info__item">
+          <div class="contact-info__icon" aria-hidden="true">🌍</div>
+          <div>
+            <p class="contact-info__label">Location</p>
+            <p class="contact-info__value">
+              <!-- TODO: update with your location -->
+              Available globally, based in Geneva, Switzerland.
+            </p>
+          </div>
+        </div>
     </div>
   </section>
 
@@ -212,34 +111,6 @@
       toggle.setAttribute('aria-expanded', open);
     });
 
-    // Formspree AJAX submission (optional — provides inline feedback without page reload)
-    const form   = document.getElementById('contactForm');
-    const status = document.getElementById('formStatus');
-
-    form.addEventListener('submit', async (e) => {
-      // Only intercept if a real Formspree ID has been set
-      if (form.action.includes('YOUR_FORM_ID')) return; // let browser handle it normally
-
-      e.preventDefault();
-      const data = new FormData(form);
-      try {
-        const res = await fetch(form.action, {
-          method: 'POST',
-          body: data,
-          headers: { Accept: 'application/json' }
-        });
-        if (res.ok) {
-          status.textContent = 'Thank you — your message has been sent. I will be in touch shortly.';
-          status.style.color = '#16a34a';
-          form.reset();
-        } else {
-          throw new Error();
-        }
-      } catch {
-        status.textContent = 'Something went wrong. Please try emailing directly.';
-        status.style.color = '#dc2626';
-      }
-    });
   </script>
 
 </body>
